@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  otus_nginx:
+    container_name: mynginx
+    image: nvkmv/otus_nginx
+    ports: 
+      - 80:80
+    networks: 
+      - otus
+
+networks:
+  otus:  
+    name: otus_net   
+
+    
